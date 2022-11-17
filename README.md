@@ -10,7 +10,7 @@
   - [Design Choices](#design-choices)
     - Fonts
     - Icons
-    - Colours
+    - Colours 
 - [Wireframes](#wireframes)
 - [Features](#features)
 - [Technologies](#technologies)
