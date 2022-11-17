@@ -50,8 +50,9 @@
 ## <a name="wireframes">Wireframes</a>
 
 ---
-
+![Wireframes](https://github.com/farrelleoin93/unum-challenge/src/assets/images/unum-challenge-wireframes.pdf)
 The wireframe for this website can be found at the following link:
+- [Wireframes](https://github.com/farrelleoin93/unum-challenge/src/assets/images/unum-challenge-wireframes.pdf)
 
 ## <a name="features">Features</a>
 
