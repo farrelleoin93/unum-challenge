@@ -37,7 +37,7 @@
 ---
 
 ### Fonts
-- I dicided to use Open Sans as the font as it is used throughout Unum's website as the main font.
+- I decided to use Open Sans as the font as it is used throughout Unum's website as the main font.
 
 ### Colours
 - I decided to use the same blue (#015294) that Unum use on their website for the background of the navbar and white (#fff) for the font.
@@ -46,7 +46,7 @@
 The main background of the website is white which is the same as Unum's website. 
 
 ### Icons
-- 
+- I used font awesome for the fonts on this site.
 
 ## <a name="wireframes">Wireframes</a>
 
