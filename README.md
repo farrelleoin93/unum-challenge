@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# UX
+## Contents
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+- [UX](#ux)
+  - [User Stories](#user-stories)
+  - [Site Owner Goals](#goals)
+  - [User Requirements and Expectations](#user-requirements)
+  - [Design Choices](#design-choices)
+    - Fonts
+    - Icons
+    - Colours
+- [Wireframes](#wireframes)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Testing](#testing)
+- [Bugs](#bugs)
+- [Deployment](#deployment)
+- [Contact](#contact)
 
-In the project directory, you can run:
+## <a name="ux">UX</a>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### <a name="user-stories">User Stories</a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Users
+1. 
 
-### `npm test`
+## <a name="user-requirements">User Requirements and Expectations</a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+- The user 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## <a name="design-choices">Design Choices</a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Fonts
+- 
 
-### `npm run eject`
+### Colours
+- 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Icons
+- 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## <a name="wireframes">Wireframes</a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The wireframe for this website can be found at the following link:
 
-## Learn More
+## <a name="features">Features</a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
+**The main features of this website are:**
+- 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## <a name="technologies">Technologies</a>
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Languages
 
-### Analyzing the Bundle Size
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS3)
+- [JavaScript](https://en.wikipedia.org/wiki/javascript)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Other
 
-### Making a Progressive Web App
+1. [Tiny PNG](https://tinypng.com/)
+   - This was used to compress the size of the hero image and the default card image.
+2. [Font Awesome](https://fontawesome.com/)
+   - The icons used were found at Font Awesome.
+3. [Ucraft](https://www.ucraft.com/free-logo-maker)
+   - Ucraft was used to make the logo for the favicon.
+6. [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+   - Flask was used throughout the building of this website.
+7. [Google Fonts](https://fonts.google.com/)
+   - The fonts used for this website were found at Google Fonts.
+8. [Balsamiq](https://balsamiq.com/)
+   - The wireframes were made using Balsamiq.
+9. [Github](https://github.com/)
+   - This project was stored on Github.
+10. [VSCode](https://code.visualstudio.com/)
+    - VSCode was used to write the code used for this website.
+11. [Git](https://en.wikipedia.org/wiki/Git)
+    - The version control system used for this project was Git.
+12. [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+    - Chrome DevTools was used throughout the building of this website.
+13. [WebFormatter](https://webformatter.com/html) 
+    - WebFormatter was used to format the html and css files.
+14. [Am I Responsive](http://ami.responsivedesign.is/) 
+    - Am I Responsive was used to see how the website looked on different devices.
+20. [JSHint](https://jshint.com/)
+    - JSHint was used to test the JavaScript code.
+21. [Python Tester](https://extendsclass.com/python-tester.html)
+    - Used to test python code.
+22. [Heroku](https://id.heroku.com/login)
+    - Heroku was used to deploy this website
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## <a name="testing">Testing</a>
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
