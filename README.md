@@ -39,10 +39,13 @@
 ---
 
 ### Fonts
-- 
+- I dicided to use Open Sans as the font as it is used throughout Unum's website as the main font.
 
 ### Colours
-- 
+- I decided to use the same blue (#015294) that Unum use on their website for the background of the navbar and white (#fff) for the font.
+- I used the same blue as the navbar for the plus minus buttons.
+- The text inside the table is black.
+The main background of the website is white which is the same as Unum's website. 
 
 ### Icons
 - 
