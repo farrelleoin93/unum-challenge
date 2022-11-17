@@ -53,7 +53,6 @@ The main background of the website is white which is the same as Unum's website.
 ## <a name="wireframes">Wireframes</a>
 
 ---
-![Wireframes](https://github.com/farrelleoin93/unum-challenge/blob/master/src/assets/images/unum-challenge-wireframes.pdf?raw=true)
 
 The wireframe for this website can be found at the following link:
 - [Wireframes](https://github.com/farrelleoin93/unum-challenge/blob/master/src/assets/images/unum-challenge-wireframes.pdf)
