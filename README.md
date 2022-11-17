@@ -21,18 +21,16 @@
 
 ## <a name="ux">UX</a>
 
----
-
-### <a name="user-stories">User Stories</a>
-
-#### Users
-1. 
-
 ## <a name="user-requirements">User Requirements and Expectations</a>
 
 ---
 
-- The user 
+1. The user should be able to add a number in a text field and also should be able to add and remove extra text fields.
+2. When the user should have a button to calculate the numbers from the text fields.
+3. When the user clicks the button to calculate the numbers a table should appear with the list of numbers, minimum, maximum and average number displayed.
+4. The user should be able to add another set of numbers after they calculate the first set.
+5. The text fields should be cleared each time numbers are calculated.
+6. The user should be able to view all previous calculations on a table.
 
 ## <a name="design-choices">Design Choices</a>
 
