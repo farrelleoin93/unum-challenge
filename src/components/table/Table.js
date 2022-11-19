@@ -5,7 +5,7 @@ import "./Table.css"
 
 export default function Table(){
     return (
-      <Col>
+      <Col sm={12} md={6}>
         <table className="table">
           <tr className="table-head">
             <th>Numbers</th>

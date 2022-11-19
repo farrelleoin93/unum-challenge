@@ -12,7 +12,7 @@ import { faMinus } from "@fortawesome/free-solid-svg-icons";
 
 export default function Form(){
     return (
-      <Col>
+      <Col sm={12} md={6}>
         <form action="">
           <TextField />
           <div className="plus-minus-container">
