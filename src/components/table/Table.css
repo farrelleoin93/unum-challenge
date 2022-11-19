@@ -1,0 +1,23 @@
+.table {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.table-head {
+    background-color: #015294;
+    color: #fff;
+    border: solid 1px #7a7a7a;
+
+}
+
+.table-head th {
+    border: solid 1px #7a7a7a;
+}
+
+.data tr{
+    border: solid 1px #7a7a7a;
+}
+
+.data td {
+    border: solid 1px #7a7a7a;
+}

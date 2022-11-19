@@ -1,7 +1,9 @@
 import Navbar from "./components/navbar/Navbar";
 import Form from "./components/form/Form";
+import Table from "./components/table/Table";
 
 import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 import "../node_modules/font-awesome/css/font-awesome.min.css";
 
@@ -11,9 +13,11 @@ function App() {
     <div className="App">
       <Navbar />
       <Container>
-        <Form />
+        <Row>
+          <Form />
+          <Table />
+        </Row>
       </Container>
-      
     </div>
   );
 }
