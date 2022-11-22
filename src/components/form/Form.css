@@ -6,6 +6,10 @@ form {
     width: 100%;
 }
 
+input {
+    width: 100%;
+}
+
 .plus-minus-container {
     display: flex;
     justify-content: space-around;

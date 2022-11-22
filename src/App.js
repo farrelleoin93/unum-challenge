@@ -1,6 +1,6 @@
 import Navbar from "./components/navbar/Navbar";
 import Form from "./components/form/Form";
-import Table from "./components/table/Table";
+// import Table from "./components/table/Table";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -15,7 +15,7 @@ function App() {
       <Container>
         <Row>
           <Form />
-          <Table />
+          {/* <Table /> */}
         </Row>
       </Container>
     </div>
