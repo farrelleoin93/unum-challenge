@@ -6,26 +6,25 @@ cors = CORS(app, resources={'/*':{'origins': 'http://localhost:3000'}})
 
 @app.route('/', methods=['GET','POST'])
 def api():
-    result = []
     if request.method == 'POST':
-        if len(result) >= 1:
-            print('greater')
-            numbers = request.json.get('numbers')
-            result = result + numbers
-            return jsonify(numbers=result)
+        print('greater')
+        numbers = request.json.get('numbers')
+        jsonStatement = jsonify(numbers)
+        print(jsonStatement.response)
+        return jsonStatement
 
-        else:
-            result = request.json.get('numbers')
-            print('less')
-            print(result)
-            return jsonify(numbers=result)
+        # else:
+        #     result = request.json.get('numbers')
+        #     print('less')
+        #     print(result)
+        #     return jsonify(numbers=result)
 
 
         # print(result)
         # return jsonify(numbers=result)
     
     else:
-        return {'numbers': []}
+        return {'numbers': numbers}
 
       
 # Running app
