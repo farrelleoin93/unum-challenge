@@ -10,18 +10,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 
-// async function POST(path, data) {
-//   return fetch(`http://127.0.0.1:5000${path}`, {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify(data),
-//   });
-// }
 
-
-export default function Form(props){
+export default function Form(){
   const [inputFields, setInputFields] = useState([''])
   const [numbersForTable, setNumbersForTable] = useState([
     {
@@ -32,22 +22,9 @@ export default function Form(props){
   }
 ]);
 
-const validateInput = (numbers) => {
-  numbers.forEach((number) => {
-    if (!number.trim()) {
-      return false;
-    }
-  });
-};
 
 const handleSubmit = (e) => {
   e.preventDefault();
-  const validInput = validateInput(inputFields)
-  
-  if(!validInput) {
-      alert('Please fill in all input boxes')
-      return null
-    }
 
     async function POST(path, data) {
       const response = await fetch(`http://127.0.0.1:5000${path}`, {
@@ -115,13 +92,13 @@ const handleSubmit = (e) => {
     return (
       <Row>
         <Col sm={12} md={6}>
-          <form action="/" method="post">
+          <form action="/" method="post" onSubmit={handleSubmit}>
             {inputFields.map((inputField, index) => (
               <input
                 required
                 key={index}
                 className="input-field"
-                type="text"
+                type="number"
                 name="numbers"
                 value={inputField.value}
                 placeholder="Enter a number"
@@ -139,14 +116,14 @@ const handleSubmit = (e) => {
             <button
               type="submit"
               className="calculate-button"
-              onClick={handleSubmit}
+              // onClick={handleSubmit}
             >
               Calculate
             </button>
           </form>
         </Col>
         <Col sm={12} md={6}>
-          <Table props={{...numbersForTable}} />
+          <Table props={{ ...numbersForTable }} />
         </Col>
       </Row>
     );

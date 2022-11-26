@@ -4,7 +4,7 @@ import "./Table.css"
 
 export default function Table(props){
   
-    console.log('props', props);
+    // console.log('props', props);
 
     return (
         <table className="table">
