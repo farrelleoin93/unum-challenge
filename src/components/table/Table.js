@@ -2,11 +2,9 @@ import React from "react";
 
 import "./Table.css"
 
-export default function Table(){
-    // let numbers
-    // fetch('http://127.0.0.1:5000/')
-    // .then(res => res.json())
-    // .then(data => console.log(data.numbers))
+export default function Table(props){
+  
+    console.log('props', props);
 
     return (
         <table className="table">

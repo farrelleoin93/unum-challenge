@@ -10,49 +10,80 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faMinus } from "@fortawesome/free-solid-svg-icons";
 
-function POST(path, data) {
-  return fetch(`http://127.0.0.1:5000${path}`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  });
-}
+// async function POST(path, data) {
+//   return fetch(`http://127.0.0.1:5000${path}`, {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(data),
+//   });
+// }
 
 
 export default function Form(props){
   const [inputFields, setInputFields] = useState([''])
-  const [numbersForTable, setNumbersForTable] = useState({
+  const [numbersForTable, setNumbersForTable] = useState([
+    {
     numbersList: '',
     minNumber: '',
     maxNumber: '',
     averageNumber: '',
-  });
-  
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    POST("/", { numbers: inputFields })
-    .then(res => res.json()
-    .then(data => {
-      // const numbersData = {
-      //   numbersList: data.numbers,
-      //   minNumber: data.min,
-      //   maxNumber: data.max,
-      //   averageNumber: data.average,
-      // }
+  }
+]);
 
-      setNumbersForTable({
-        ...numbersForTable, 
-        numbersList: data.numbers,
-        minNumber: data.min,
-        maxNumber: data.max,
-        averageNumber: data.average,
+const validateInput = (numbers) => {
+  numbers.forEach((number) => {
+    if (!number.trim()) {
+      return false;
+    }
+  });
+};
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  const validInput = validateInput(inputFields)
+  
+  if(!validInput) {
+      alert('Please fill in all input boxes')
+      return null
+    }
+
+    async function POST(path, data) {
+      const response = await fetch(`http://127.0.0.1:5000${path}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
       });
-      console.log(numbersForTable);
-    })) 
+      const returnedData = await response.json();
+      console.log(returnedData);
+      if(numbersForTable.numbersList !== ''){
+        setNumbersForTable([
+          ...numbersForTable, 
+          {numbersList: returnedData.numbers,
+          minNumber: returnedData.min,
+          maxNumber: returnedData.max,
+          averageNumber: returnedData.average
+        }
+      ]);
+      } else {
+        setNumbersForTable([
+          {
+            numbersList: returnedData.numbers,
+            minNumber: returnedData.min,
+            maxNumber: returnedData.max,
+            averageNumber: returnedData.average,
+          },
+        ]);
+      }
+    console.log(numbersForTable);
+    }
+    POST("/", { numbers: inputFields })
     clearInputs();
-  };
+    }
+
   const handleInputChange = (index, event) => {
     const values = [...inputFields];
     values[index] = event.target.value;
@@ -87,6 +118,7 @@ export default function Form(props){
           <form action="/" method="post">
             {inputFields.map((inputField, index) => (
               <input
+                required
                 key={index}
                 className="input-field"
                 type="text"
@@ -114,7 +146,7 @@ export default function Form(props){
           </form>
         </Col>
         <Col sm={12} md={6}>
-          <Table />
+          <Table props={{...numbersForTable}} />
         </Col>
       </Row>
     );
