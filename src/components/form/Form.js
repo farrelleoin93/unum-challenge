@@ -23,16 +23,34 @@ function POST(path, data) {
 
 export default function Form(props){
   const [inputFields, setInputFields] = useState([''])
+  const [numbersForTable, setNumbersForTable] = useState({
+    numbersList: '',
+    minNumber: '',
+    maxNumber: '',
+    averageNumber: '',
+  });
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    e.preventDefault();
-    POST("/", { numbers: inputFields }).then(async (resp) => {
-      const json = await resp.json();
-      // console.log(json.numbers);
-      setInputFields([...inputFields],json.numbers);
-      console.log(inputFields);
-    });
+    POST("/", { numbers: inputFields })
+    .then(res => res.json()
+    .then(data => {
+      // const numbersData = {
+      //   numbersList: data.numbers,
+      //   minNumber: data.min,
+      //   maxNumber: data.max,
+      //   averageNumber: data.average,
+      // }
+
+      setNumbersForTable({
+        ...numbersForTable, 
+        numbersList: data.numbers,
+        minNumber: data.min,
+        maxNumber: data.max,
+        averageNumber: data.average,
+      });
+      console.log(numbersForTable);
+    })) 
     clearInputs();
   };
   const handleInputChange = (index, event) => {
@@ -62,7 +80,6 @@ export default function Form(props){
       setInputFields(values)
     }
   }
-
 
     return (
       <Row>

@@ -6,25 +6,25 @@ cors = CORS(app, resources={'/*':{'origins': 'http://localhost:3000'}})
 
 @app.route('/', methods=['GET','POST'])
 def api():
+
+
     if request.method == 'POST':
-        print('greater')
+        # Get the list of numbers
         numbers = request.json.get('numbers')
-        jsonStatement = jsonify(numbers)
-        print(jsonStatement.response)
-        return jsonStatement
+        # Do calculations
+        numbers_list = [int(i) for i in numbers]
+        max_number = max(numbers_list)
+        min_number = min(numbers_list)
+        average_number = round(sum(numbers_list) / len(numbers_list))
 
-        # else:
-        #     result = request.json.get('numbers')
-        #     print('less')
-        #     print(result)
-        #     return jsonify(numbers=result)
-
-
-        # print(result)
-        # return jsonify(numbers=result)
-    
-    else:
-        return {'numbers': numbers}
+        print(numbers_list, max_number, min_number, average_number)
+        # Return as dictionary
+        return {
+            'numbers': numbers_list,
+            'min': min_number,
+            'max': max_number,
+            'average': average_number
+        }
 
       
 # Running app
