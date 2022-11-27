@@ -7,6 +7,7 @@ export default function Table(props){
   const tableData = props.props
     tableData.map(numbersArr => {
       if (numbersArr.numbersList === "") tableData.splice(numbersArr, 1);
+      return tableData
     })
     return (
       <table className="table">

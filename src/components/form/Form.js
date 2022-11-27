@@ -15,7 +15,6 @@ export default function Form(){
   const [tableComponentClass, setTableComponentClass] = useState('table-component-hide')
   const [inputFields, setInputFields] = useState([''])
   const [isValid, setIsValid] = useState(true)
-  const [submitButton, setSubmitButton] = useState('active')
   const [numbersForTable, setNumbersForTable] = useState([
     {
     numbersList: '',
@@ -24,9 +23,6 @@ export default function Form(){
     averageNumber: '',
   }
 ]);
-
-const buttonEl =document.getElementById('submit-button')
-
 
 
 const handleSubmit = (e) => {
@@ -62,9 +58,10 @@ const handleSubmit = (e) => {
     console.log(isNaN(event.target.value.trim()));
     if(isNaN(event.target.value.trim()) === false) {
       setIsValid(false)
-      setSubmitButton('deactive')
     }
-    else setIsValid(true)
+    else {
+      setIsValid(true)
+    }
     const values = [...inputFields];
     values[index] = event.target.value;
     setInputFields(values)
@@ -119,7 +116,7 @@ const handleSubmit = (e) => {
             <button
               id="submit-button"
               type="submit"
-              className={`calculate-button ${submitButton}`}
+              className="calculate-button"
               disabled={isValid}
             >
               Calculate

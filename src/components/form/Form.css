@@ -34,6 +34,14 @@ input {
     height: 33px;
 }
 
+.active{
+    background-color: #015294;
+}
+
+.deactive {
+    background-color: #4a4a4a;
+}
+
 .table-component-hide {
     display: none;
 }
