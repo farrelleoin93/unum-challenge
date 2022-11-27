@@ -90,7 +90,7 @@ const handleSubmit = (e) => {
                 required
                 key={index}
                 className="input-field"
-                type="number"
+                type="text"
                 name="numbers"
                 value={inputField.value}
                 placeholder="Enter a number"

@@ -5,7 +5,7 @@ import "./Table.css"
 export default function Table(props){
   
   const tableData = props.props
-  console.log(tableData);
+  // console.log(tableData);
     tableData.map(numbersArr => {
       if (numbersArr.numbersList === "") tableData.splice(numbersArr, 1);
     })
@@ -22,7 +22,7 @@ export default function Table(props){
                 if(numbersArr.numbersList === '') tableData.splice(numbersArr, 1)
                 return (
                   <tr className="data">
-                    <td>{numbersArr.numbersList}</td>
+                    <td>{numbersArr.numbersList.join(', ')}</td>
                     <td>{numbersArr.minNumber}</td>
                     <td>{numbersArr.maxNumber}</td>
                     <td>{numbersArr.averageNumber}</td>
