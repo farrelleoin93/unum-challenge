@@ -5,7 +5,6 @@ import "./Table.css"
 export default function Table(props){
   
   const tableData = props.props
-  // console.log(tableData);
     tableData.map(numbersArr => {
       if (numbersArr.numbersList === "") tableData.splice(numbersArr, 1);
     })
