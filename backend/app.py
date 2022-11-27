@@ -12,7 +12,7 @@ def api():
         # Get the list of numbers
         numbers = request.json.get('numbers')
         # Do calculations
-        numbers_list = [int(i) for i in numbers]
+        numbers_list = [float(i) for i in numbers]
         max_number = max(numbers_list)
         min_number = min(numbers_list)
         average_number = round(sum(numbers_list) / len(numbers_list))

@@ -18,10 +18,10 @@ export default function Table(props){
               <th>Maximum</th>
               <th>Average</th>
             </tr>
-            {    tableData.map(numbersArr => {
+            {    tableData.map((numbersArr, index) => {
                 if(numbersArr.numbersList === '') tableData.splice(numbersArr, 1)
                 return (
-                  <tr className="data">
+                  <tr className="data" key={index}>
                     <td>{numbersArr.numbersList.join(', ')}</td>
                     <td>{numbersArr.minNumber}</td>
                     <td>{numbersArr.maxNumber}</td>
