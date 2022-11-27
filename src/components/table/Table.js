@@ -4,10 +4,11 @@ import "./Table.css"
 
 export default function Table(props){
   
-    // console.log('props', props);
-
+  const tableData = props.props
+  console.log(tableData);
+    
     return (
-        <table className="table">
+      <table className="table">
           <tbody>
             <tr className="table-head">
               <th>Numbers</th>
@@ -15,12 +16,17 @@ export default function Table(props){
               <th>Maximum</th>
               <th>Average</th>
             </tr>
-            <tr className="data">
-              <td>2,6,4,3,2</td>
-              <td>2</td>
-              <td>6</td>
-              <td>4</td>
-            </tr>
+          {    tableData.map(numbersArr => {
+                if(numbersArr.numbersList === '') tableData.splice(numbersArr, 1)
+                return (
+                  <tr className="data">
+                    <td>{numbersArr.numbersList}</td>
+                    <td>{numbersArr.minNumber}</td>
+                    <td>{numbersArr.maxNumber}</td>
+                    <td>{numbersArr.averageNumber}</td>
+                  </tr>
+                );
+              })}
           </tbody>
         </table>
     );

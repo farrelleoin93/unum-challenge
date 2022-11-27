@@ -36,7 +36,6 @@ const handleSubmit = (e) => {
       });
       const returnedData = await response.json();
       console.log(returnedData);
-      if(numbersForTable.numbersList !== ''){
         setNumbersForTable([
           ...numbersForTable, 
           {numbersList: returnedData.numbers,
@@ -45,16 +44,6 @@ const handleSubmit = (e) => {
           averageNumber: returnedData.average
         }
       ]);
-      } else {
-        setNumbersForTable([
-          {
-            numbersList: returnedData.numbers,
-            minNumber: returnedData.min,
-            maxNumber: returnedData.max,
-            averageNumber: returnedData.average,
-          },
-        ]);
-      }
     console.log(numbersForTable);
     }
     POST("/", { numbers: inputFields })
@@ -116,14 +105,13 @@ const handleSubmit = (e) => {
             <button
               type="submit"
               className="calculate-button"
-              // onClick={handleSubmit}
             >
               Calculate
             </button>
           </form>
         </Col>
         <Col sm={12} md={6}>
-          <Table props={{ ...numbersForTable }} />
+          <Table props={[...numbersForTable]} />
         </Col>
       </Row>
     );
