@@ -32,3 +32,11 @@ input {
     width: 150px;
     height: 33px;
 }
+
+.table-component-hide {
+    display: none;
+}
+
+.table-component-show {
+    display: block;
+}

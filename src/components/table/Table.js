@@ -6,7 +6,9 @@ export default function Table(props){
   
   const tableData = props.props
   console.log(tableData);
-    
+    tableData.map(numbersArr => {
+      if (numbersArr.numbersList === "") tableData.splice(numbersArr, 1);
+    })
     return (
       <table className="table">
           <tbody>
@@ -16,7 +18,7 @@ export default function Table(props){
               <th>Maximum</th>
               <th>Average</th>
             </tr>
-          {    tableData.map(numbersArr => {
+            {    tableData.map(numbersArr => {
                 if(numbersArr.numbersList === '') tableData.splice(numbersArr, 1)
                 return (
                   <tr className="data">

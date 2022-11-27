@@ -12,6 +12,7 @@ import { faMinus } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Form(){
+  const [tableComponentClass, setTableComponentClass] = useState('table-component-hide')
   const [inputFields, setInputFields] = useState([''])
   const [numbersForTable, setNumbersForTable] = useState([
     {
@@ -47,7 +48,9 @@ const handleSubmit = (e) => {
     console.log(numbersForTable);
     }
     POST("/", { numbers: inputFields })
+    
     clearInputs();
+    setTableComponentClass('table-component-show')
     }
 
   const handleInputChange = (index, event) => {
@@ -111,7 +114,9 @@ const handleSubmit = (e) => {
           </form>
         </Col>
         <Col sm={12} md={6}>
+          <div className={tableComponentClass}>
           <Table props={[...numbersForTable]} />
+          </div>
         </Col>
       </Row>
     );
