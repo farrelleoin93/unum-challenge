@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Container fluid>
+      <Container>
         <Row className="justify-content-center">
           <Form />
         </Row>
