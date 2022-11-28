@@ -30,6 +30,7 @@ export default function Form() {
 
     // posts form data to backend API and fetches calculated results
     async function POST(path, data) {
+      try {
       const response = await fetch(`http://127.0.0.1:5000${path}`, {
         method: "POST",
         headers: {
@@ -37,7 +38,9 @@ export default function Form() {
         },
         body: JSON.stringify(data),
       });
+      console.log(response);
       const returnedData = await response.json();
+      // Set state to returned data
       setNumbersForTable([
         ...numbersForTable,
         {
@@ -47,13 +50,15 @@ export default function Form() {
           averageNumber: returnedData.average,
         },
       ]);
-      console.log(numbersForTable);
+      setTableComponentClass("table-component-show");
+      } catch(e){
+        alert('Make sure you only enter numbers in all input boxes')
+      }
     }
 
     POST("/", { numbers: inputFields });
 
     clearInputs();
-    setTableComponentClass("table-component-show");
   };
 
   // Handle every time user types in input field
@@ -67,6 +72,7 @@ export default function Form() {
     values[index] = event.target.value;
     setInputFields(values);
   };
+  
 
   // Clear all input fields
   const clearInputs = () => {
