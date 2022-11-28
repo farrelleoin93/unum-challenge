@@ -19,6 +19,7 @@ export default function Table(props) {
           <th>Average</th>
         </tr>
         {tableData.map((numbersArr, index) => {
+          // Remove any submissions of empty number lists
           if (numbersArr.numbersList === "") tableData.splice(numbersArr, 1);
           return (
             <tr className="data" key={index}>
