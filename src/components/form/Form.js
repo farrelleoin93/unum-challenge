@@ -15,7 +15,6 @@ export default function Form() {
     "table-component-hide"
   );
   const [inputFields, setInputFields] = useState([""]);
-  const [isValid, setIsValid] = useState(true);
   const [numbersForTable, setNumbersForTable] = useState([
     {
       numbersList: "",
@@ -30,6 +29,21 @@ export default function Form() {
 
     // posts form data to backend API and fetches calculated results
     async function POST(path, data) {
+
+      // If form does not only contain numbers the form will not post
+      const validData = (data) => {
+        let result = true
+        data.numbers.forEach(num => {
+          if(isNaN(num)) result = false
+        })
+        return result
+      }
+
+      if(!validData(data)) {
+        alert("Make sure you only enter numbers in all input boxes");
+        return
+      }
+
       try {
       const response = await fetch(`http://127.0.0.1:5000${path}`, {
         method: "POST",
@@ -38,7 +52,6 @@ export default function Form() {
         },
         body: JSON.stringify(data),
       });
-      console.log(response);
       const returnedData = await response.json();
       // Set state to returned data
       setNumbersForTable([
@@ -63,11 +76,6 @@ export default function Form() {
 
   // Handle every time user types in input field
   const handleInputChange = (index, event) => {
-    if (isNaN(event.target.value.trim()) === false) {
-      setIsValid(false);
-    } else {
-      setIsValid(true);
-    }
     const values = [...inputFields];
     values[index] = event.target.value;
     setInputFields(values);
@@ -130,7 +138,6 @@ export default function Form() {
             id="submit-button"
             type="submit"
             className="calculate-button"
-            disabled={isValid}
           >
             Calculate
           </button>
