@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Container fluid >
-        <Row>
+      <Container fluid>
+        <Row className="justify-content-center">
           <Form />
         </Row>
       </Container>

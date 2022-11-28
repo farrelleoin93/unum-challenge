@@ -111,7 +111,7 @@ export default function Form() {
   };
 
   return (
-    <Row>
+    <Row className="justify-content-center">
       <Col sm={12} md={6}>
         <form action="/" method="post" onSubmit={handleSubmit}>
           {inputFields.map((inputField, index) => (
@@ -134,11 +134,7 @@ export default function Form() {
               <FontAwesomeIcon icon={faPlus} />
             </button>
           </div>
-          <button
-            id="submit-button"
-            type="submit"
-            className="calculate-button"
-          >
+          <button id="submit-button" type="submit" className="calculate-button">
             Calculate
           </button>
         </form>
