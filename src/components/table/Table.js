@@ -22,7 +22,7 @@ export default function Table(props) {
           if (numbersArr.numbersList === "") tableData.splice(numbersArr, 1);
           return (
             <tr className="data" key={index}>
-              <td>{numbersArr.numbersList.join(", ")}</td>
+              <td>{numbersArr.numbersList.join(",")}</td>
               <td>{numbersArr.minNumber}</td>
               <td>{numbersArr.maxNumber}</td>
               <td>{numbersArr.averageNumber}</td>
