@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar/Navbar";
 import Form from "./components/form/Form";
 
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
@@ -10,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Container>
+      <Container fluid >
         <Row>
           <Form />
         </Row>
