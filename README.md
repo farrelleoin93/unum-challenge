@@ -13,6 +13,7 @@
 - [Technologies](#technologies)
 - [Testing](#testing)
 - [Known errors](#errors)
+- [Clone project](#clone)
 
 ## <a name="ux">UX</a>
 
@@ -167,3 +168,54 @@ Tested with Chrome DevTools using profiles for the following devices, accounting
     - After some research I discovered that these errors are most likely as a result of certain extensions installed on Chrome and do not have any effect on the app.
 
 ---
+
+## <a name="clone">Clone project</a>
+### How to clone the project
+
+To clone this project from its [GitHub repository](https://github.com/farrelleoin93/unum-challenge):
+1. From the repository, click **Code**
+2. In the **Clone >> HTTPS** section, copy the clone URL for the repository
+3. In your local IDE open Git Bash
+4. Change the current working directory to the location where you want the cloned directory to be made
+5. Type `git clone`, and then paste the URL you copied in Step 2
+```console
+git clone https://github.com/farrelleoin93/12-acres-beer.git
+```
+6. Press Enter. Your local clone will be created
+
+7. Then run the following
+
+```console
+git clone <paste url>.
+```
+
+```console
+npm install
+```
+
+```console
+npm start
+```
+#### On windows
+8. Open another terminal and navigate to backend folder by running 
+
+```console
+cd backend
+```
+9. Activate virtual environment by running 
+
+```console
+venv\Scripts\activate
+```
+
+Or if on mac/linux
+
+```console
+. venv/bin/activate
+```
+
+```console
+python app.py
+```
+
+The app should be running
