@@ -208,10 +208,17 @@ cd backend
 venv\Scripts\activate
 ```
 
-Or if on mac/linux
+
+#### Or if on mac/linux
 
 ```console
 . venv/bin/activate
+```
+
+10. Install flask and flask cors by running the following commands:
+```console
+pip install flask
+pip install flask-cors
 ```
 
 ```console
