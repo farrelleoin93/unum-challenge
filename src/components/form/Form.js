@@ -111,7 +111,7 @@ export default function Form() {
   };
 
   return (
-    <Row className="justify-content-center">
+    <Row className="justify-content-center g-0">
       <Col sm={12} lg={6}>
         <form action="/" method="post" onSubmit={handleSubmit}>
           {inputFields.map((inputField, index) => (

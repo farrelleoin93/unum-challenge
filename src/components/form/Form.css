@@ -2,7 +2,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 30px;
+    padding: 30px 15px 0;
     width: 100%;
 }
 
@@ -48,4 +48,5 @@ input {
 
 .table-component-show {
     display: block;
+    padding: 30px 15px 0;
 }
