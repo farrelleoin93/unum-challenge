@@ -83,7 +83,9 @@ The wireframe for this website can be found at the following link:
 8. [Python Tester](https://extendsclass.com/python-tester.html)
     - Used to test python code.
 9. [Heroku](https://id.heroku.com/login)
-    - Heroku was used to deploy this website
+    - Heroku was used to deploy this website#
+10. [Ucraft](https://www.ucraft.com/?tap_cid=2625be00-6f83-11ed-a814-e9f0884ff5f3)
+    - Used to create the favicon
 
 ## <a name="testing">Testing</a>
 
