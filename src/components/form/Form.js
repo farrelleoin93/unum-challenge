@@ -127,10 +127,18 @@ export default function Form() {
             />
           ))}
           <div className="plus-minus-container">
-            <button className="plus-minus" onClick={handleMinusInput}>
+            <button
+              aria-label="remove-field"
+              className="plus-minus"
+              onClick={handleMinusInput}
+            >
               <FontAwesomeIcon icon={faMinus} />
             </button>
-            <button className="plus-minus" onClick={handleAddInput}>
+            <button
+              aria-label="add-field"
+              className="plus-minus"
+              onClick={handleAddInput}
+            >
               <FontAwesomeIcon icon={faPlus} />
             </button>
           </div>

@@ -4,20 +4,15 @@
 ---
 
 - [UX](#ux)
-  - [User Stories](#user-stories)
-  - [Site Owner Goals](#goals)
   - [User Requirements and Expectations](#user-requirements)
   - [Design Choices](#design-choices)
     - Fonts
     - Icons
     - Colours 
 - [Wireframes](#wireframes)
-- [Features](#features)
 - [Technologies](#technologies)
 - [Testing](#testing)
-- [Bugs](#bugs)
-- [Deployment](#deployment)
-- [Contact](#contact)
+- [Known errors](#errors)
 
 ## <a name="ux">UX</a>
 
@@ -41,12 +36,12 @@
 
 ### Colours
 - I decided to use the same blue (#015294) that Unum use on their website for the background of the navbar and white (#fff) for the font.
-- I used the same blue as the navbar for the plus minus buttons.
+- I used the same blue as the navbar for the calculate button.
 - The text inside the table is black.
-The main background of the website is white which is the same as Unum's website. 
+- The main background of the website is white which is the same as Unum's website. 
 
 ### Icons
-- I used font awesome for the fonts on this site.
+- I used font awesome for the icons used on this site.
 
 ## <a name="wireframes">Wireframes</a>
 
@@ -55,56 +50,119 @@ The main background of the website is white which is the same as Unum's website.
 The wireframe for this website can be found at the following link:
 - [Wireframes](https://github.com/farrelleoin93/unum-challenge/blob/master/src/assets/images/unum-challenge-wireframes.pdf)
 
-## <a name="features">Features</a>
-
----
-**The main features of this website are:**
-- 
-
 ## <a name="technologies">Technologies</a>
 
 ---
 
-### Languages
+### Languages and frameworks
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/CSS3)
 - [JavaScript](https://en.wikipedia.org/wiki/javascript)
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+- [React](https://reactjs.org/))
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/))
 
 ### Other
 
-1. [Tiny PNG](https://tinypng.com/)
-   - This was used to compress the size of the hero image and the default card image.
-2. [Font Awesome](https://fontawesome.com/)
+
+1. [Font Awesome](https://fontawesome.com/)
    - The icons used were found at Font Awesome.
-3. [Ucraft](https://www.ucraft.com/free-logo-maker)
-   - Ucraft was used to make the logo for the favicon.
-6. [Flask](https://flask.palletsprojects.com/en/1.1.x/)
-   - Flask was used throughout the building of this website.
-7. [Google Fonts](https://fonts.google.com/)
+2. [Google Fonts](https://fonts.google.com/)
    - The fonts used for this website were found at Google Fonts.
-8. [Balsamiq](https://balsamiq.com/)
+3. [Balsamiq](https://balsamiq.com/)
    - The wireframes were made using Balsamiq.
-9. [Github](https://github.com/)
+4. [Github](https://github.com/)
    - This project was stored on Github.
-10. [VSCode](https://code.visualstudio.com/)
+5. [VSCode](https://code.visualstudio.com/)
     - VSCode was used to write the code used for this website.
-11. [Git](https://en.wikipedia.org/wiki/Git)
+6. [Git](https://en.wikipedia.org/wiki/Git)
     - The version control system used for this project was Git.
-12. [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+7. [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
     - Chrome DevTools was used throughout the building of this website.
-13. [WebFormatter](https://webformatter.com/html) 
-    - WebFormatter was used to format the html and css files.
-14. [Am I Responsive](http://ami.responsivedesign.is/) 
-    - Am I Responsive was used to see how the website looked on different devices.
-20. [JSHint](https://jshint.com/)
-    - JSHint was used to test the JavaScript code.
-21. [Python Tester](https://extendsclass.com/python-tester.html)
+8. [Python Tester](https://extendsclass.com/python-tester.html)
     - Used to test python code.
-22. [Heroku](https://id.heroku.com/login)
+9. [Heroku](https://id.heroku.com/login)
     - Heroku was used to deploy this website
 
 ## <a name="testing">Testing</a>
+
+## <a name="manual-testing">Manual Testing</a>
+
+The following tests have been carried out without issue:
+
+**Form**
+- Confirm that if a user enters invalid details to the form that the form will not post to the API and the user will get an alert message.
+    - CHECK
+
+- Confirm if the plus button is clicked a new input field is added.
+    - CHECK
+
+- Confirm if the minus button is clicked a input field is removed.
+    - CHECK
+
+- Confirm if the calculate button is clicked with valid numbers the form will be posted to a backend API.
+    - CHECK
+
+
+**Table**
+- Confirm that the table only appears when valid data is returned from the API.
+    - CHECK
+
+- Confirm that the table displays all data from past calculations.
+    - CHECK
+
+- Confirm that unvalid data is not displayed in the table.
+    - CHECK
+
+
+**Responsiveness**
+- Confirm that all pages are visually appealling on phone, tablet and dektop screensizes.
+    - CHECK
+
+- Confirm that the form and table work on mobile, tablet and desktop devices.
+    - CHECK
+
+
+### Browsers
+
+Tested on:
+
+- Chrome
+    - no issues
+- Edge
+    - no issues
+- Firefox
+    - no issues
+- Safari (iOS)
+    - no issues
+
+### Screen sizes
+
+Tested with Chrome DevTools using profiles for the following devices, accounting for minimum screen widths of 320px:
+
+- Galaxy S5
+- iPhone 6/7/8
+- iPhone 6/7/8 Plus
+- iPhone X
+- iPad
+- iPad Pro
+
+... and also using the responsive profiles of:
+
+- Mobile S (320px)
+- Mobile M (375px)
+- Mobile L (425px)
+- Tablet (768px)
+- Laptop (1024px)
+- Laptop L (1440px)
+
+
+## <a name="errors">Known errors</a>
+
+- Unchecked runtime.lastError: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
+- Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
+
+    - After some research I discovered that these errors are most likely as a result of certain extensions installed on Chrome and do not have any effect on the app.
 
 ---
