@@ -112,7 +112,7 @@ export default function Form() {
 
   return (
     <Row className="justify-content-center">
-      <Col sm={12} md={6}>
+      <Col sm={12} lg={6}>
         <form action="/" method="post" onSubmit={handleSubmit}>
           {inputFields.map((inputField, index) => (
             <input
@@ -147,7 +147,7 @@ export default function Form() {
           </button>
         </form>
       </Col>
-      <Col sm={12} md={6}>
+      <Col sm={12} lg={6}>
         <div className={tableComponentClass}>
           <Table props={[...numbersForTable]} />
         </div>
