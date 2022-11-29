@@ -63,8 +63,8 @@ The wireframe for this website can be found at the following link:
 - [CSS3](https://en.wikipedia.org/wiki/CSS3)
 - [JavaScript](https://en.wikipedia.org/wiki/javascript)
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
-- [React](https://reactjs.org/))
-- [Flask](https://flask.palletsprojects.com/en/1.1.x/))
+- [React](https://reactjs.org/)
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 
 ### Other
 
