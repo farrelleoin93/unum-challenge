@@ -50,6 +50,9 @@
 The wireframe for this website can be found at the following link:
 - [Wireframes](https://github.com/farrelleoin93/unum-challenge/blob/master/src/assets/images/unum-challenge-wireframes.pdf)
 
+### Changes to wireframes
+- After viewing and testing the website on different devices I decided to change the layout on tablet devices to be the same as mobile devices. I felt that this was more visually appealing.
+
 ## <a name="technologies">Technologies</a>
 
 ---
