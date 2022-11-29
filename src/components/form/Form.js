@@ -27,10 +27,10 @@ export default function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // posts form data to backend API and fetches calculated results
+    // posts form data to backend API and fetches calculated results.
     async function POST(path, data) {
 
-      // If form does not only contain numbers the form will not post
+      // If form does not only contain numbers the form will not post.
       const validData = (data) => {
         let result = true
         data.numbers.forEach(num => {
