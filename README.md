@@ -179,7 +179,7 @@ To clone this project from its [GitHub repository](https://github.com/farrelleoi
 4. Change the current working directory to the location where you want the cloned directory to be made
 5. Type `git clone`, and then paste the URL you copied in Step 2
 ```console
-git clone https://github.com/farrelleoin93/12-acres-beer.git
+git clone https://github.com/farrelleoin93/unum-challenge.git
 ```
 6. Press Enter. Your local clone will be created
 
