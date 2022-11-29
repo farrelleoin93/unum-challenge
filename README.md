@@ -65,7 +65,6 @@ The wireframe for this website can be found at the following link:
 
 ### Other
 
-
 1. [Font Awesome](https://fontawesome.com/)
    - The icons used were found at Font Awesome.
 2. [Google Fonts](https://fonts.google.com/)
@@ -125,7 +124,6 @@ The following tests have been carried out without issue:
 - Confirm that the form and table work on mobile, tablet and desktop devices.
     - CHECK
 
-
 ### Browsers
 
 Tested on:
@@ -158,7 +156,6 @@ Tested with Chrome DevTools using profiles for the following devices, accounting
 - Tablet (768px)
 - Laptop (1024px)
 - Laptop L (1440px)
-
 
 ## <a name="errors">Known errors</a>
 
