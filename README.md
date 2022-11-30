@@ -137,8 +137,6 @@ Tested on:
     - no issues
 - Firefox
     - no issues
-- Safari (iOS)
-    - no issues
 
 ### Screen sizes
 
@@ -221,8 +219,15 @@ pip install flask
 pip install flask-cors
 ```
 
+11. Run the app
+#### On windows
 ```console
 python app.py
+```
+
+#### On Mac/Linux
+```console
+python3 app.py
 ```
 
 The app should be running
