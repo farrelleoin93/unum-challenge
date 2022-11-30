@@ -12,7 +12,7 @@
 - [Wireframes](#wireframes)
 - [Technologies](#technologies)
 - [Testing](#testing)
-- [Known errors](#errors)
+- [Possible errors](#errors)
 - [Clone project](#clone)
 
 ## <a name="ux">UX</a>
@@ -22,7 +22,7 @@
 ---
 
 1. The user should be able to add a number in a text field and also should be able to add and remove extra text fields.
-2. When the user should have a button to calculate the numbers from the text fields.
+2. There should be a button to calculate the numbers from the text fields.
 3. When the user clicks the button to calculate the numbers a table should appear with the list of numbers, minimum, maximum and average number displayed.
 4. The user should be able to add another set of numbers after they calculate the first set.
 5. The text fields should be cleared each time numbers are calculated.
@@ -33,7 +33,8 @@
 ---
 
 ### Fonts
-- I decided to use Open Sans as the font as it is used throughout Unum's website as the main font.
+- I decided to use Open Sans as the font as it is used throughout Unum's website as the font for the calculate button.
+- I used Righteous as the font for the logo as I thought it looked similar to the Unum logo.
 
 ### Colours
 - I decided to use the same blue (#015294) that Unum use on their website for the background of the navbar and white (#fff) for the font.
@@ -54,6 +55,7 @@ The wireframe for this website can be found at the following link:
 
 ### Changes to wireframes
 - After viewing and testing the website on different devices I decided to change the layout on tablet devices to be the same as mobile devices. I felt that this was more visually appealing.
+- I decided not to add the question mark feature to the navbar as I felt it was unnecessary.
 
 ## <a name="technologies">Technologies</a>
 
@@ -158,12 +160,12 @@ Tested with Chrome DevTools using profiles for the following devices, accounting
 - Laptop (1024px)
 - Laptop L (1440px)
 
-## <a name="errors">Known errors</a>
+## <a name="errors">Possible errors</a>
 
 - Unchecked runtime.lastError: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
 - Uncaught (in promise) Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received
 
-    - After some research I discovered that these errors are most likely as a result of certain extensions installed on Chrome and do not have any effect on the app.
+    - After some research I discovered that these errors are most likely as a result of certain extensions installed on Chrome and do not have any effect on the app. These errors disappeared when all extensions were removed from chrome
 
 ---
 
